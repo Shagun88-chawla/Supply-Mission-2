@@ -36,6 +36,13 @@ function setup() {
 	redBox1Sprite.shapeColor= color("red");
 	redBox2Sprite=createSprite(510, 610, 20, 100);
 	redBox2Sprite.shapeColor = color("red");
+	redbox= Bodies.rectangle(width/2, 650, 200, 20, {isStatic:true});
+	redbox1= Bodies.rectangle(310,610, 20, 100, {isStatic:true});
+	redbox2= Bodies.rectangle(510, 610, 20, 100, {isStatic:true});
+	World.add(world, redBox);
+	World.add(world, redbox2);
+	World.add(world,redbox2);	
+	
 
 	groundSprite=createSprite(width/2, height-35, width,10);
 	groundSprite.shapeColor=color(255)
